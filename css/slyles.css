@@ -1,0 +1,236 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --text-decoration-color: #2196f3;
+    --white-color:#ffffff;
+  }
+  
+  body {
+    font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
+      "Helvetica Neue", sans-serif;
+  }
+  
+  /* Логотип */
+  .studio-header {
+    color: #000;
+    font-family: 'Raleway';
+  }
+  
+  .studio-footer {
+    color: var(--white-color);
+  }
+  
+  .logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--text-decoration-color);
+    text-decoration: none;
+  }
+  
+  .logo:hover {
+    color: var(--text-decoration-color);
+  }
+  
+  .list {
+    list-style: none;
+  }  
+  
+.link{
+  color: var(--primary-text-color); 
+}
+
+/* Скрытый заголовок h1 */
+.hidden{
+    display: none;
+  }
+
+  /* Header Студия и Фото*/
+  .link-studio,
+  .link-foto {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--text-decoration-color);
+    text-decoration: none;
+  }
+  
+  /* Site-nav */
+  .site-nav .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--title-text-color);
+    text-decoration: none;
+  }
+  
+  .site-nav .link:hover,
+  .site-nav .link:focus {
+    color: var(--text-decoration-color);
+  }
+  
+  /* Auth-nav */
+  .auth-nav .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14
+    color: var(--title-text-color);
+    text-decoration: none;
+  }
+  
+  .auth-nav .link:hover,
+  .auth-nav .link:focus {
+    color: var(--text-decoration-color);
+  }
+  
+  /* Hero */
+  .hero {
+    background-color: #2f303a;
+  }
+  .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--white-color);
+  }
+  .hero .button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--white-color);
+    background-color: var(--text-decoration-color);
+  }
+
+  .hero .button:hover{
+    color: var(--white-color);
+    background-color: #188CE8;
+  }
+
+  /* Заголовки всех секций h1 */
+  .section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--title-text-color);
+  }
+  
+  /* секция Особенности */
+  .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--title-text-color);
+    text-transform: uppercase;
+  }
+
+  .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primary-text-color);
+  }
+  
+  /* секция Наша команда */
+  .name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19
+    color: var(--title-text-color);
+  }
+  
+  .position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--primary-text-color);
+  }
+  
+  /* Кнопки портфолио */
+
+  .section-btn-all {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    color: var(--white-color);
+    background-color: var(--text-decoration-color);
+  }
+  
+  .section-btn{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+    }
+
+  .section-btn:hover,
+  .section-btn:focus {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    color: var(--white-color);
+    background-color: var(--text-decoration-color);
+  }
+
+  .list-button{
+    list-style: none;
+  }
+  
+  /* Портфолио*/
+  .project-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--title-text-color)
+  }
+  
+  .project-type {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--primary-text-color);
+  }
+
+  .list-link:hover{
+    background-color: var(--text-decoration-color);
+  }
+  
+  /* Footer */
+  .footer {
+    background: #2f303a;
+  }
+  
+  /* Адрес */
+  .list-address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--white-color) ;
+  text-decoration: none;
+  }
+  
+  .list-address:hover,
+  .list-address:focus,
+  .mail:hover,
+  .mail:focus,
+  .tel:hover,
+  .tel:focus {
+    color: var(--text-decoration-color);
+  }
+  
+  .mail,
+  .tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+  
+  }
+  
+  
