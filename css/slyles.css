@@ -39,6 +39,7 @@
     color: var(--text-decoration-color);
   }
 
+  /* Утилиты */
   .list {
     list-style-type: none;
     padding: 0;
@@ -53,11 +54,12 @@
   }
 
 .hero,
-.section{
-  margin-bottom: 94px;
+.features{
+  align-items: center;
 }
 
 .link{
+  display: block;
   color: var(--primary-text-color); 
 }
 
@@ -66,14 +68,27 @@
     display: none;
   }
 
+/* Полоса под header*/
+   .header{
+     outline: 1px solid #ECECEC;
+   } 
+
+
   /* Header Студия и Фото*/
   .link-studio,
   .link-foto {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     color: var(--text-decoration-color);
     text-decoration: none;
+  }
+
+  /* Main-nav */
+  .main-nav{
+    display: flex;
+    align-items: center;
   }
   
   /* Site-nav */
@@ -90,6 +105,17 @@
     color: var(--text-decoration-color);
   }
   
+.site-nav{
+  display: flex;
+  margin-left: 93px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.site-nav li:not(:last-child){
+  margin-right: 50px;
+}
+
   /* Auth-nav */
   .auth-nav .link {
     font-weight: 500;
@@ -104,7 +130,16 @@
     color: var(--text-decoration-color);
   }
   
+  .auth-nav{
+    display: flex;
+    margin-left: auto;
+
+  }
   
+.auth-nav li+ li{
+  margin-left: 50px;
+}
+
   /* Hero */
   .hero {
     background-color: #2f303a;
@@ -141,16 +176,28 @@
 
   /* Заголовки всех секций h1 */
   .section-title {
-    margin-top: 0;
+    text-align: center;
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     color: var(--title-text-color);
-    text-align: center;
   }
   
   /* секция Особенности */
+.features{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.features .item{
+  width: 270px;
+}
+
   .title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -170,16 +217,30 @@
     color: var(--primary-text-color);
   }
   
+/* Чем мы занимаемся */
+.picture{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 94px;
+  }
+
 
   /* секция Наша команда */
-.peoples{
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+  .userpic{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .peoples{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    outline: 1px solid tomato;
+  }
 
   .name {
     margin-top: 30px;
     margin-bottom: 10px;
+    text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19
@@ -188,16 +249,17 @@
   
   .position {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
+    text-align: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     color: var(--primary-text-color);
   }
-
     
   /* Кнопки портфолио */
   .section-btn-all {
+    margin-right: 8px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -206,6 +268,7 @@
   }
   
   .section-btn{
+    margin-right: 8px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -214,6 +277,7 @@
     background-color: #F5F4FA;
     }
 
+    
   .section-btn:hover,
   .section-btn:focus {
     font-weight: 500;
@@ -234,13 +298,15 @@
 }
 
 .list-button{
-  margin-bottom: 34px;
-  text-align: center;
+  display: flex;
+  margin: auto;
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: center;
 }
 
   .project-name {
-    margin-top: 20px;
-    margin-bottom: 4px;
+    margin: 20px 24px 4px 24px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -248,8 +314,7 @@
   }
   
   .project-type {
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0 24px 20px 24px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
@@ -259,6 +324,30 @@
   .list-link:hover{
     background-color: var(--text-decoration-color);
   }
+
+  .foto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 34px;
+    margin-bottom: 94px;
+  }
+
+.project{
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #EEEEEE;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #EEEEEE;
+
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #EEEEEE;
+
+  margin-bottom: 30px;
+}
   
   /* Footer */
   .footer {
