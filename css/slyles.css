@@ -50,7 +50,6 @@
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
-    outline: 2px solid tomato;
   }
 
 .hero,
@@ -234,7 +233,6 @@
   .peoples{
     padding-top: 94px;
     padding-bottom: 94px;
-    outline: 1px solid tomato;
   }
 
   .name {
@@ -348,7 +346,7 @@
 
   margin-bottom: 30px;
 }
-  
+
   /* Footer */
   .footer {
     background: #2f303a;
