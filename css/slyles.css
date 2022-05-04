@@ -19,13 +19,11 @@
   .studio-footer {
     display: inline-block;
     color: var(--white-color);
-    margin-top: 60px;
     margin-bottom: 20px;
   }
   
   .logo {
     display: inline-block;
-    margin-top: 60;
     margin-bottom: 20;
     font-family: 'Raleway';
     font-weight: 700;
@@ -49,7 +47,7 @@
   .container{
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
+    width: 1170px;
   }
 
 .hero,
@@ -59,6 +57,8 @@
 
 .link{
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color); 
 }
 
@@ -77,6 +77,8 @@
   .link-studio,
   .link-foto {
     display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -107,8 +109,6 @@
 .site-nav{
   display: flex;
   margin-left: 93px;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .site-nav li:not(:last-child){
@@ -157,6 +157,8 @@
   }
   .hero .button {
     display: inline-block;
+    padding: 10px 32px;
+    border: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -176,21 +178,28 @@
   /* Заголовки всех секций h1 */
   .section-title {
     text-align: center;
-    margin-bottom: 50px;
+    margin-top: 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     color: var(--title-text-color);
   }
+
+  .section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   
+  .content{
+    padding-top: 0;
+  }
+
   /* секция Особенности */
 .features{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 
 .features .item{
@@ -220,23 +229,32 @@
 .picture{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 94px;
   }
 
-
   /* секция Наша команда */
+
+.peoples{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #F5F4FA;
+  }
+
   .userpic{
     display: flex;
     justify-content: space-between;
   }
 
-  .peoples{
-    padding-top: 94px;
-    padding-bottom: 94px;
+  .name-position{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
   }
 
   .name {
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 10px;
     text-align: center;
     font-weight: 500;
@@ -247,7 +265,7 @@
   
   .position {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     text-align: center;
     font-weight: 400;
     font-size: 16px;
@@ -257,7 +275,14 @@
     
   /* Кнопки портфолио */
   .section-btn-all {
+    display: block;
+    padding: 6px 22px;
     margin-right: 8px;
+    border: none;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -266,7 +291,11 @@
   }
   
   .section-btn{
+    display: block;
+    padding: 6px 22px;
     margin-right: 8px;
+    border: none;
+    border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -274,7 +303,6 @@
     color: var(--title-text-color);
     background-color: #F5F4FA;
     }
-
     
   .section-btn:hover,
   .section-btn:focus {
@@ -292,19 +320,40 @@
   /* Портфолио*/
 
 .portfolio{
-  margin-top: 94px;
+  padding: 94px 0;
 }
 
 .list-button{
   display: flex;
-  margin: auto;
+  margin: 0 0 34px;
   padding-left: 0;
   padding-right: 0;
   justify-content: center;
 }
 
+.foto{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 -30px 30px;
+}
+
+.items{
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  width: calc(100%/3 - 30px);
+  margin: 0 0 30px 30px;
+}
+
+.project{
+  margin-left: auto;
+  margin-right: auto;
+ padding: 20px 24px;
+ background: #FFFFFF;
+}
+
   .project-name {
-    margin: 20px 24px 4px 24px;
+    margin: 0 0 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -312,7 +361,7 @@
   }
   
   .project-type {
-    margin: 0 24px 20px 24px;
+    margin: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
@@ -323,33 +372,11 @@
     background-color: var(--text-decoration-color);
   }
 
-  .foto{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 34px;
-    margin-bottom: 94px;
-  }
-
-.project{
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-right-color: #EEEEEE;
-
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #EEEEEE;
-
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: #EEEEEE;
-
-  margin-bottom: 30px;
-}
-
   /* Footer */
   .footer {
     background: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   
   /* Адрес */
@@ -390,5 +417,4 @@
 
   .tel{
     display: inline-block;
-    margin-bottom: 60px;
   }
